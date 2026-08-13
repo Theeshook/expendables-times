@@ -241,17 +241,29 @@
   }
   .pay-how b { color: var(--ink); }
 
-  .legal {
-    border-top: 1px solid var(--rule); padding-top: 14px;
-    column-count: 2; column-gap: 26px; column-rule: 1px dotted var(--rule);
+  .fineprint {
+    margin-top: 26px; border-top: 1px solid var(--rule); padding-top: 10px;
   }
-  @media (max-width: 720px) { .legal { column-count: 1; } }
-  .legal p {
-    font-size: 11.5px; line-height: 1.45; color: var(--ink-soft);
-    margin: 0 0 9px; break-inside: avoid;
+  .fineprint summary {
+    cursor: pointer; list-style: none; font-family: Arial, sans-serif;
+    font-size: 10px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-soft);
   }
-  .legal b { color: var(--ink); }
-  .legal .legal-note { font-style: italic; }
+  .fineprint summary::-webkit-details-marker { display: none; }
+  .fineprint summary::before { content: "▸ "; color: var(--rule); }
+  .fineprint[open] summary::before { content: "▾ "; }
+  .fineprint summary:hover { color: var(--ink); }
+  .fineprint-body {
+    margin-top: 10px; column-count: 3; column-gap: 20px;
+  }
+  @media (max-width: 860px) { .fineprint-body { column-count: 2; } }
+  @media (max-width: 560px) { .fineprint-body { column-count: 1; } }
+  .fineprint-body p {
+    font-size: 10px; line-height: 1.4; color: var(--ink-soft);
+    margin: 0 0 7px; break-inside: avoid;
+  }
+  .fineprint-body b { color: var(--ink); }
+  .fineprint-body .legal-note { font-style: italic; }
 
   .credits {
     list-style: none; margin: 8px 0 0; padding: 0;
@@ -306,6 +318,11 @@
     <div class="section-head" style="margin-top:18px"><h2 class="sm">On the Wire</h2><div class="line"></div></div>
     <ul class="news-list">
     <li>
+      <div class="hl">Leboeuf: Doku's 2032 deal crucial for Man City</div>
+      <div class="hl-desc">Leboeuf: Doku's 2032 deal crucial for Man City</div>
+      <div class="hl-meta">2026-08-13 · ESPN</div>
+    </li>
+    <li>
       <div class="hl">Transfer rumors, news: Chelsea join race to sign Monaco's Camara</div>
       <div class="hl-desc">Chelsea are the latest Premier League team linked with a move for AS Monaco midfielder Lamine Camara. Transfer Talk has the latest.</div>
       <div class="hl-meta">2026-08-13 · ESPN · ESPN</div>
@@ -329,11 +346,6 @@
       <div class="hl">Doku: 'I'm an unfinished product' after new Manchester City contract</div>
       <div class="hl-desc">Doku: 'I'm an unfinished product' after new Manchester City contract</div>
       <div class="hl-meta">2026-08-13 · ESPN</div>
-    </li>
-    <li>
-      <div class="hl">Former referee Anthony Taylor speaks out on reasons for stepping away from English game</div>
-      <div class="hl-desc">After 20 years as an English football referee, Anthony Taylor will not be involved at the start of the upcoming season -- he explains what caused him to make such a drastic decision.</div>
-      <div class="hl-meta">2026-08-13 · Tom Masters · ESPN</div>
     </li></ul>
 
     <div class="note-box">
@@ -956,8 +968,8 @@
           one. In six seasons nobody else has ever won it. Fragata is also the only
           manager to go back-to-back, taking 20/21 and 21/22 — and a win this season
           would make it twice. <b>Nobody has ever won three in a row.</b>
-          Two of the three champions are already signed up: Súper is Mazzi FFC. The only
-          one missing is Guigo, the one other man with multiple titles.
+          Two of the three champions are already signed up. The only one missing is
+          Guigo, the one other man with multiple titles.
         </p>
       </div>
       <div>
@@ -1003,12 +1015,12 @@
     <div class="joinbar">
       <div><div class="lbl">League code</div><div class="code">pru6vo</div></div>
       <div><div class="lbl">Buy-in</div><div style="font-size:20px">$35</div></div>
-      <div><div class="lbl">Buy-in goes to</div><div style="font-size:15px"><b>Ask Matt in the group chat</b></div></div>
+      <div><div class="lbl">Buy-in goes to</div><div style="font-size:15px"><b>Ask Mathias in the group chat</b></div></div>
     </div>
 
     <div class="pay-how">
-      <b>Paying in.</b> Payment details are not printed on a public page. Matt posts them
-      in the group chat. When you send it, send it as a <b>personal payment to a friend</b>
+      <b>Paying in.</b> Payment details are not printed on a public page. Mathias posts them in the
+      group chat. When you send it, send it as a <b>personal payment to a friend</b>
       and <b>leave the note blank</b> — never as a purchase, and never with a note about
       buy-ins, entries or leagues. Payment apps prohibit gambling-related transfers, and a
       note that trips their filters can freeze or reverse the money for the sender. This is
@@ -1018,64 +1030,40 @@
   </div>
 
   <!-- ============ THE SMALL PRINT ============ -->
-  <div class="section">
-    <div class="section-head"><h2>The Small Print</h2><div class="line"></div></div>
+  <details class="fineprint">
+    <summary>The small print — terms, rights and the legal bit</summary>
+    <div class="fineprint-body">
+      <p><b>A private game.</b> Invitation-only contest between friends, run for
+      entertainment. No fee, commission or rake — every dollar goes back out as prizes.</p>
 
-    <div class="legal">
-      <p>
-        <b>A private game between friends.</b> The Expendables is a private contest run by
-        its members for entertainment. It is not a business, offers no service for sale,
-        and takes no fee, commission or rake — every dollar contributed is paid back out
-        to the players as prizes. Entry is by invitation only.
-      </p>
-      <p>
-        <b>Not affiliated with anyone.</b> The Expendables Times is an independent
-        newsletter with no connection to, endorsement from, or sponsorship by the Premier
-        League, Fantasy Premier League, the Football Association, any club, ESPN or any
-        other organisation named here. All club and competition names and trademarks
-        belong to their owners and are used descriptively to report on matters of public
-        record.
-      </p>
-      <p>
-        <b>Skill contest, and your own local law applies.</b> Entries are decided by each
-        manager's own selections and judgement across a full season. Rules on paid-entry
-        fantasy contests vary by state and country, and each participant is responsible
-        for confirming that taking part is lawful where they live. Anyone who is unsure,
-        or who is not of legal age where they live, should not enter.
-      </p>
-      <p>
-        <b>Money.</b> Buy-ins are voluntary contributions to a prize pool held on the
-        members' behalf, not payment for goods or services, and are arranged privately
-        between members. Send them as personal transfers between friends. Prizes are paid out in full at the end of the
-        season. Participants are responsible for their own taxes on anything they win.
-      </p>
-      <p>
-        <b>Data and accuracy.</b> Figures are drawn from the official Fantasy Premier
-        League API and other public sources and are checked automatically before
-        publication, but they can still be wrong, incomplete or out of date. Final
-        standings and prize outcomes are settled on Fantasy Premier League's own official
-        scores, never on anything printed here. No warranty is given, and nothing in this
-        newsletter is betting, investment, financial or legal advice.
-      </p>
-      <p>
-        <b>Names and images.</b> Managers are listed by the name and team they chose when
-        joining. Any member may ask to be identified by initials instead, or to have their
-        details removed if they leave. Photographs are freely licensed works reproduced
-        with the credit their licences require; if you hold rights in anything here and
-        want it removed, say so and it will be taken down.
-      </p>
-      <p>
-        <b>Disputes.</b> The commissioner settles questions of interpretation in good
-        faith, and rules are not changed mid-season to affect a result that has already
-        happened. Anyone who disagrees with a ruling can withdraw before the next
-        gameweek and have their buy-in returned in full.
-      </p>
-      <p class="legal-note">
-        Written by the commissioner, not by a lawyer. It sets out how this league intends
-        to operate — it is not legal advice and creates no professional relationship.
-      </p>
+      <p><b>Independent.</b> No connection to or endorsement by the Premier League,
+      Fantasy Premier League, any club or ESPN. Names and marks belong to their owners
+      and are used descriptively.</p>
+
+      <p><b>Skill, and your own local law.</b> Decided by each manager's selections over a
+      season. Rules on paid fantasy contests vary by state and country — each player is
+      responsible for their own. Don't enter if it isn't lawful where you live.</p>
+
+      <p><b>Money.</b> Buy-ins are personal contributions to a members' pot, not payment
+      for goods or services, arranged privately. Paid out in full at season's end.
+      Winners handle their own taxes.</p>
+
+      <p><b>Accuracy.</b> Figures come from public APIs and are checked automatically, but
+      can still be wrong. Fantasy Premier League's official scores settle every result and
+      prize, never anything printed here. No warranty; not betting, financial or legal
+      advice.</p>
+
+      <p><b>Names and images.</b> Managers appear as they chose when joining — ask to be
+      initials only, or removed. Photographs are freely licensed and credited; rights
+      holders can ask for removal.</p>
+
+      <p><b>Disputes.</b> The commissioner settles interpretation in good faith and won't
+      change rules mid-season to alter a finished result. Disagree with a ruling and you
+      can withdraw before the next gameweek for a full refund.</p>
+
+      <p class="legal-note">Written by the commissioner, not a lawyer. Not legal advice.</p>
     </div>
-  </div>
+  </details>
 
   <footer>
     The Expendables Times · Fantasy League Version · Edition No. 00 · Built 2026-08-13<br>
