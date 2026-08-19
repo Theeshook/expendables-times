@@ -199,6 +199,43 @@
   }
   .note { font-size: 13.5px; color: var(--ink-soft); }
 
+  .pending td { opacity: .72; }
+
+  .dossier {
+    border: 2px solid var(--ink); background: var(--paper-2);
+    padding: 18px 20px; margin: 16px 0;
+  }
+  .dossier-head {
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+    border-bottom: 1px solid var(--rule); padding-bottom: 12px; margin-bottom: 14px;
+  }
+  .dossier-label {
+    font-family: Arial, sans-serif; font-size: 10px; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--ink-soft);
+  }
+  .dossier-name {
+    font-size: 30px; text-transform: uppercase; color: var(--red);
+    line-height: 1.05; margin-top: 4px;
+  }
+  .dossier-alias { font-size: 13.5px; color: var(--ink-soft); margin-top: 4px; font-style: italic; }
+  .dossier-stamp {
+    font-size: 34px; color: var(--red); border: 3px solid var(--red);
+    border-radius: 4px; padding: 2px 14px; transform: rotate(-6deg);
+    font-weight: 700; white-space: nowrap; opacity: .85;
+  }
+  .dossier-facts {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+    gap: 10px 16px; margin: 0 0 14px;
+  }
+  .dossier-facts dt {
+    font-family: Arial, sans-serif; font-size: 9.5px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--ink-soft);
+  }
+  .dossier-facts dd { margin: 2px 0 0; font-size: 15px; font-weight: 700; }
+  .dossier-table { font-size: 13px; }
+  .dossier-note { font-size: 13.5px; color: var(--ink-soft); margin-top: 12px; }
+  .dossier-note b { color: var(--ink); }
+
   .tag-champ {
     display: inline-block; font-family: Arial, sans-serif; font-size: 9px;
     letter-spacing: .08em; text-transform: uppercase; color: var(--gold);
@@ -666,7 +703,7 @@
       <td class="club">Brentford</td>
       <td>MID</td>
       <td>£5.5</td>
-      <td class="own">2.4%</td>
+      <td class="own">2.5%</td>
       <td class="left muted">1 Aug</td>
     </tr>
     <tr>
@@ -878,6 +915,84 @@
     </div>
   </div>
 
+  <!-- ============ THE MYSTERY ============ -->
+  <div class="section">
+    <div class="section-head"><h2>Who Is Jonas Tu?</h2><div class="line"></div></div>
+
+    <p class="lede">
+      There are thirteen managers in this league. Twelve of them, somebody can name.
+      The thirteenth is <b>“Sound of Tzolis”</b> — and not one person has been able to
+      say who he is, how he found us, or who invited him.
+    </p>
+
+    
+  <div class="dossier">
+    <div class="dossier-head">
+      <div>
+        <div class="dossier-label">Unidentified manager · entry 5464514</div>
+        <div class="dossier-name">Sound of Tzolis</div>
+        <div class="dossier-alias">plays under the name “jonas tu”</div>
+      </div>
+      <div class="dossier-stamp">Who?</div>
+    </div>
+    <dl class="dossier-facts">
+      <div><dt>Region</dt><dd>USA</dd></div>
+      <div><dt>Supports</dt><dd>Arsenal</dd></div>
+      <div><dt>Seasons played</dt><dd>4</dd></div>
+      <div><dt>Best world rank</dt><dd>1,160,781</dd></div>
+      <div><dt>Leagues he is in</dt><dd>1 — ours</dd></div>
+    </dl>
+    <div class="scroll"><table class="dossier-table">
+      <thead><tr><th class="left">Season</th><th>Points</th><th>World rank</th></tr></thead>
+      <tbody>
+    <tr>
+      <td class="left">2022/23</td>
+      <td>1999</td>
+      <td>5,263,826</td>
+    </tr>
+    <tr>
+      <td class="left">2023/24</td>
+      <td>2287</td>
+      <td>1,160,781</td>
+    </tr>
+    <tr>
+      <td class="left">2024/25</td>
+      <td>2182</td>
+      <td>3,105,685</td>
+    </tr>
+    <tr>
+      <td class="left">2025/26</td>
+      <td>1880</td>
+      <td>6,270,469</td>
+    </tr></tbody>
+    </table></div>
+    <p class="dossier-note">
+      Peaked in <b>2023/24</b> at 1,160,781 and has finished worse every season since. Went from
+      1999 points in 2022/23 to 1880 in 2025/26.
+    </p>
+  </div>
+
+    <p>
+      What we can tell you is what the game itself says. He is real, he is American, he
+      supports Arsenal, and he has been playing since 2022. He is not a bot and he is
+      not a stranger who wandered in off a public code — <b>this is the only league he is
+      in</b>, which means somebody here gave him the code.
+    </p>
+
+    <div class="note-box">
+      <b>The one clue we have.</b> There is another manager out there called
+      <i>Alex Maass</i> whose team is <b>“Sound of the Tzolis”</b> — one word different
+      from ours. Same country. Same club. He plays in Guigo's other league. That is either
+      the answer or a hell of a coincidence, and we cannot prove which.
+      <br><br>
+      <b>Your move.</b> If you invited him, own up. If you recognise the team name, say so.
+      If you <i>are</i> Jonas Tu, you have until Friday at 1:30 to reveal yourself — after
+      that you are just the guy who took everyone's money without introducing himself.
+      <br><br>
+      He also has not paid.
+    </div>
+  </div>
+
   <!-- ============ RUMOUR MILL ============ -->
   <div class="section">
     <div class="section-head"><h2>The Rumour Mill</h2><div class="line"></div></div>
@@ -900,15 +1015,15 @@
       <div class="hl-meta">Football365 · 19 Aug 2026</div>
     </li>
     <li>
+      <div class="rm">Romano finally gives ‘here we go’ to next Liverpool transfer with ‘medical being planned’</div>
+      <div class="hl-meta">Football365 · 19 Aug 2026</div>
+    </li>
+    <li>
       <div class="rm">Romano drops huge Gakpo to Tottenham update after Liverpool ‘deal off’ claim</div>
       <div class="hl-meta">Football365 · 19 Aug 2026</div>
     </li>
     <li>
       <div class="rm">Fabrizio Romano declares next Man Utd midfield signing link as ‘fake news’</div>
-      <div class="hl-meta">Football365 · 18 Aug 2026</div>
-    </li>
-    <li>
-      <div class="rm">£100m double Liverpool exit accelerates as Romano confirms new bid imminent</div>
       <div class="hl-meta">Football365 · 18 Aug 2026</div>
     </li></ul>
     <div class="note-box">
@@ -993,7 +1108,7 @@
       <td class="player">Haaland</td>
       <td class="club">Man City</td>
       <td>£15.5</td>
-      <td class="own">70%</td>
+      <td class="own">69.9%</td>
     </tr>
     <tr>
       <td class="player">B.Fernandes</td>
@@ -1047,7 +1162,7 @@
       <td class="player">Haaland</td>
       <td class="club">Man City</td>
       <td>£15.5</td>
-      <td class="own">70%</td>
+      <td class="own">69.9%</td>
     </tr>
     <tr>
       <td class="player">João Pedro</td>
@@ -1083,7 +1198,7 @@
       <td class="player">Calafiori</td>
       <td class="club">Arsenal</td>
       <td>£5.5</td>
-      <td class="own">29.3%</td>
+      <td class="own">29.4%</td>
     </tr>
     <tr>
       <td class="player">Gabriel</td>
@@ -1118,7 +1233,7 @@
     <div class="section-head"><h2>Expendables Business</h2><div class="line"></div></div>
 
     <div class="stat-grid">
-      <div class="stat"><div class="k">Managers</div><div class="v">13<small> / 12</small></div></div>
+      <div class="stat"><div class="k">In the league</div><div class="v">13<small> +2 joining</small></div></div>
       <div class="stat"><div class="k">Collected</div><div class="v">$385<small> of $455</small></div></div>
       <div class="stat warn"><div class="k">Buy-ins paid</div><div class="v">11<small> / 13</small></div></div>
       <div class="stat"><div class="k">Sign-ups close</div><div class="v">Aug 20</div></div>
@@ -1287,6 +1402,16 @@
       <td class="player">Jamon Occidental uni</td>
       <td class="left muted">Mathias Grez</td>
       <td class="left" style="color:var(--green)">Paid</td>
+    </tr>
+    <tr class="pending">
+      <td class="player">C.S.D. El Baile</td>
+      <td class="left muted">Juan Antonio Rehnfeldt</td>
+      <td class="left muted"><i>joining</i></td>
+    </tr>
+    <tr class="pending">
+      <td class="player">Chicken TikkaMoSalah</td>
+      <td class="left muted">Jonathan Martinez</td>
+      <td class="left muted"><i>joining</i></td>
     </tr></tbody>
   </table></div>
         <p style="margin-top:10px;font-size:13.5px;color:var(--ink-soft)">
