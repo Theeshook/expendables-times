@@ -258,6 +258,32 @@
   .prize-flag b { color: var(--ink); }
   .prize-flag div:last-child { font-size: 13.5px; color: var(--ink-soft); }
 
+  .results { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px;
+    background: var(--rule); border: 1px solid var(--rule); margin: 14px 0; }
+  .result { background: var(--paper-2); padding: 10px 14px; display: flex;
+    align-items: baseline; gap: 10px; font-size: 14px; }
+  .result.promoted { background: rgba(169,131,47,.12); }
+  .result.rout .rs { color: var(--red); }
+  .result .rt { flex: 1; }
+  .result .rt.away { text-align: right; }
+  .result .rt.won { font-weight: 700; }
+  .result .rs { font-family: ui-monospace, Consolas, monospace; font-weight: 700;
+    font-size: 15px; white-space: nowrap; }
+
+  .promoted-box { display: flex; gap: 20px; align-items: center; margin: 14px 0;
+    border-left: 5px solid var(--gold); background: var(--paper-2); padding: 16px 18px; }
+  .promoted-stat { font-size: 52px; font-weight: 700; color: var(--gold); line-height: .9;
+    white-space: nowrap; text-align: center; }
+  .promoted-stat span { display: block; font-size: 12px; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--ink-soft); font-weight: 400; }
+  .promoted-list { margin: 8px 0 0; padding-left: 18px; font-size: 13.5px; color: var(--ink-soft); }
+  .promoted-list li { padding: 2px 0; }
+
+  tr.nobody td { background: rgba(126,28,20,.06); }
+  .flops { margin: 10px 0 0; padding-left: 18px; font-size: 14.5px; }
+  .flops li { padding: 4px 0; }
+  .owes { color: var(--red); }
+
   .rollcall { font-size: 14px; color: var(--ink-soft); }
   .rollcall b { color: var(--ink); }
   .rollcall b.owes { color: var(--red); }
@@ -693,6 +719,206 @@
       for the two managers who played Bench Boost, because their bench actually scored.
       “vs career” is this week against that manager's own points-per-gameweek across
       every season they have played.
+    </div>
+  </div>
+
+  <!-- ============ MATCHDAY ============ -->
+  <div class="section">
+    <div class="section-head"><h2>How Gameweek 1 Actually Went</h2><div class="line"></div></div>
+
+    <p class="lede">
+      The opening weekend did not go to the script anybody wrote. <b>Hull City beat
+      Manchester United 2&ndash;0</b> on their first day back in the division, Brentford
+      put three past Tottenham, and Brighton took Aston Villa apart 4&ndash;0.
+    </p>
+
+    <div class="results">
+    <div class="result promoted rout">
+      <span class="rt won">Arsenal</span>
+      <span class="rs">3&ndash;0</span>
+      <span class="rt away ">Coventry City</span>
+    </div>
+    <div class="result promoted">
+      <span class="rt won">Hull City</span>
+      <span class="rs">2&ndash;0</span>
+      <span class="rt away ">Manchester United</span>
+    </div>
+    <div class="result">
+      <span class="rt won">Everton</span>
+      <span class="rs">2&ndash;0</span>
+      <span class="rt away ">Crystal Palace</span>
+    </div>
+    <div class="result promoted">
+      <span class="rt won">Ipswich Town</span>
+      <span class="rs">2&ndash;1</span>
+      <span class="rt away ">Sunderland</span>
+    </div>
+    <div class="result">
+      <span class="rt ">Nottingham Forest</span>
+      <span class="rs">0&ndash;1</span>
+      <span class="rt away won">Leeds United</span>
+    </div>
+    <div class="result rout">
+      <span class="rt won">Brentford</span>
+      <span class="rs">3&ndash;0</span>
+      <span class="rt away ">Tottenham Hotspur</span>
+    </div>
+    <div class="result rout">
+      <span class="rt won">Brighton &amp; Hove Albion</span>
+      <span class="rs">4&ndash;0</span>
+      <span class="rt away ">Aston Villa</span>
+    </div>
+    <div class="result">
+      <span class="rt won">Manchester City</span>
+      <span class="rs">2&ndash;1</span>
+      <span class="rt away ">AFC Bournemouth</span>
+    </div>
+    <div class="result">
+      <span class="rt ">Newcastle United</span>
+      <span class="rs">2&ndash;2</span>
+      <span class="rt away ">Liverpool</span>
+    </div>
+    <div class="result">
+      <span class="rt ">Fulham</span>
+      <span class="rs">2&ndash;3</span>
+      <span class="rt away won">Chelsea</span>
+    </div></div>
+
+    
+  <div class="promoted-box">
+    <div class="promoted-stat">2<span>of 3</span></div>
+    <div>
+      <b>The promoted clubs won 2 of their 3.</b>
+      <ul class="promoted-list"><li><b>Coventry City</b> lost to Arsenal <span class="muted">0&ndash;3</span></li><li><b>Hull City</b> beat Manchester United <span class="muted">2&ndash;0</span></li><li><b>Ipswich Town</b> beat Sunderland <span class="muted">2&ndash;1</span></li></ul>
+    </div>
+  </div>
+
+    <div class="note-box">
+      <b>Why this matters to you and not just to them.</b> Promoted sides were supposed
+      to be where you park a cheap defender and forget about him. Two of the three won,
+      and their defenders are in the table below — at four million pounds each.
+    </div>
+  </div>
+
+  <!-- ============ THE ONES THAT GOT AWAY ============ -->
+  <div class="section">
+    <div class="section-head"><h2>The Ones Nobody Owned</h2><div class="line"></div></div>
+
+    <p class="lede">
+      Here is the uncomfortable part. The highest-scoring players of the weekend were
+      almost entirely absent from this league's squads — <b>and the two best defenders in
+      the game cost £4.0 and play for the side that beat Manchester United</b>.
+    </p>
+
+    <div class="scroll"><table>
+    <thead><tr>
+      <th>Pts</th><th class="left">Player</th><th class="left">Club</th><th>Price</th>
+      <th class="left">Returns</th><th class="left">Owned here</th>
+    </tr></thead>
+    <tbody>
+    <tr class="nobody">
+      <td><b>17</b></td>
+      <td class="player">De Cuyper</td>
+      <td class="club">BHA</td>
+      <td>£4.6</td>
+      <td>1G 1A</td>
+      <td class="down">nobody</td>
+    </tr>
+    <tr class="nobody">
+      <td><b>16</b></td>
+      <td class="player">Hinshelwood</td>
+      <td class="club">BHA</td>
+      <td>£6.0</td>
+      <td>2G 0A</td>
+      <td class="down">nobody</td>
+    </tr>
+    <tr class="nobody">
+      <td><b>15</b></td>
+      <td class="player">Mendy</td>
+      <td class="club">HUL</td>
+      <td>£4.0</td>
+      <td>1G 0A</td>
+      <td class="down">nobody</td>
+    </tr>
+    <tr class="nobody">
+      <td><b>14</b></td>
+      <td class="player">Ajayi</td>
+      <td class="club">HUL</td>
+      <td>£4.0</td>
+      <td>1G 0A</td>
+      <td class="down">nobody</td>
+    </tr>
+    <tr>
+      <td><b>14</b></td>
+      <td class="player">M.Sangaré</td>
+      <td class="club">BRE</td>
+      <td>£5.6</td>
+      <td>0G 2A</td>
+      <td class="">1 of 21</td>
+    </tr>
+    <tr class="nobody">
+      <td><b>13</b></td>
+      <td class="player">Kayode</td>
+      <td class="club">BRE</td>
+      <td>£4.5</td>
+      <td>1G 0A</td>
+      <td class="down">nobody</td>
+    </tr>
+    <tr class="nobody">
+      <td><b>13</b></td>
+      <td class="player">Palmer</td>
+      <td class="club">CHE</td>
+      <td>£9.5</td>
+      <td>1G 1A</td>
+      <td class="down">nobody</td>
+    </tr>
+    <tr class="nobody">
+      <td><b>13</b></td>
+      <td class="player">Stach</td>
+      <td class="club">LEE</td>
+      <td>£6.0</td>
+      <td>1G 0A</td>
+      <td class="down">nobody</td>
+    </tr>
+    <tr>
+      <td><b>12</b></td>
+      <td class="player">Gakpo</td>
+      <td class="club">LIV</td>
+      <td>£7.0</td>
+      <td>1G 0A</td>
+      <td class="">1 of 21</td>
+    </tr>
+    <tr>
+      <td><b>11</b></td>
+      <td class="player">White</td>
+      <td class="club">ARS</td>
+      <td>£5.5</td>
+      <td>0G 1A</td>
+      <td class="">2 of 21</td>
+    </tr></tbody>
+  </table></div>
+  <p class="fig-note">7 of the top 10 scorers were owned by nobody in this league.</p>
+
+    <div class="section-head" style="margin-top:20px"><h2 class="sm">Meanwhile, What We Did Own</h2><div class="line"></div></div>
+
+    <ul class="flops">
+    <li>
+      <b>Haaland</b> — owned by <b>17 of 21</b>,
+      played 90 minutes, scored <b class="owes">2</b>.
+    </li>
+    <li>
+      <b>Mbeumo</b> — owned by <b>14 of 21</b>,
+      played 90 minutes, scored <b class="owes">2</b>.
+    </li>
+    <li>
+      <b>B.Fernandes</b> — owned by <b>11 of 21</b>,
+      played 90 minutes, scored <b class="owes">2</b>.
+    </li></ul>
+
+    <div class="note-box">
+      Three players were in more than half of this league's squads. All three played the
+      full ninety minutes. All three returned two points. That is not variance — that is
+      twenty-one people buying the same newspaper.
     </div>
   </div>
 
@@ -1319,20 +1545,20 @@
       <td class="left muted">3 Aug</td>
     </tr>
     <tr>
+      <td class="player">Mendy</td>
+      <td class="club">Hull City</td>
+      <td>DEF</td>
+      <td>£4.0</td>
+      <td class="own">2.8%</td>
+      <td class="left muted">12 Aug</td>
+    </tr>
+    <tr>
       <td class="player">Araujo</td>
       <td class="club">Liverpool</td>
       <td>DEF</td>
       <td>£5.5</td>
       <td class="own">2.7%</td>
       <td class="left muted">10 Aug</td>
-    </tr>
-    <tr>
-      <td class="player">Mendy</td>
-      <td class="club">Hull City</td>
-      <td>DEF</td>
-      <td>£4.0</td>
-      <td class="own">2.7%</td>
-      <td class="left muted">12 Aug</td>
     </tr>
     <tr>
       <td class="player">Palestra</td>
