@@ -284,6 +284,16 @@
   .flops li { padding: 4px 0; }
   .owes { color: var(--red); }
 
+  .fd {
+    display: inline-block; font-family: Arial, sans-serif; font-size: 10px;
+    letter-spacing: .04em; padding: 2px 5px; border-radius: 2px; margin-right: 3px;
+    border: 1px solid transparent;
+  }
+  .fd i { font-style: normal; opacity: .55; }
+  .fd-easy { background: rgba(44,95,63,.16); color: var(--green); border-color: rgba(44,95,63,.3); }
+  .fd-mid  { background: var(--paper-2); color: var(--ink-soft); border-color: var(--rule); }
+  .fd-hard { background: rgba(126,28,20,.12); color: var(--red); border-color: rgba(126,28,20,.28); }
+
   .reading { margin: 10px 0 0; padding-left: 18px; font-size: 13.5px; }
   .reading li { padding: 3px 0; }
   .reading a { color: var(--navy); }
@@ -1701,9 +1711,9 @@
       <text x="158" y="200" text-anchor="end" font-size="9.5"
             font-family="Arial,sans-serif" fill="#4a4234"
             letter-spacing=".05em">BRENTFORD</text>
-      <rect x="168" y="176" width="157.83132530120483" height="15" rx="4" fill="#0b6ec7"/>
-      <text x="333.83132530120486" y="188" font-size="12"
-            font-family="ui-monospace,Consolas,monospace" fill="#201b14">13.1%</text>
+      <rect x="168" y="176" width="159.03614457831327" height="15" rx="4" fill="#0b6ec7"/>
+      <text x="335.03614457831327" y="188" font-size="12"
+            font-family="ui-monospace,Consolas,monospace" fill="#201b14">13.2%</text>
     </g>
     <g>
       <text x="158" y="218" text-anchor="end" font-size="12.5"
@@ -1731,9 +1741,9 @@
       <text x="158" y="290" text-anchor="end" font-size="9.5"
             font-family="Arial,sans-serif" fill="#4a4234"
             letter-spacing=".05em">SPURS</text>
-      <rect x="168" y="266" width="95.18072289156628" height="15" rx="4" fill="#0b6ec7"/>
-      <text x="271.1807228915663" y="278" font-size="12"
-            font-family="ui-monospace,Consolas,monospace" fill="#201b14">7.9%</text>
+      <rect x="168" y="266" width="93.97590361445783" height="15" rx="4" fill="#0b6ec7"/>
+      <text x="269.9759036144578" y="278" font-size="12"
+            font-family="ui-monospace,Consolas,monospace" fill="#201b14">7.8%</text>
     </g>
     <g>
       <text x="158" y="308" text-anchor="end" font-size="12.5"
@@ -1800,7 +1810,7 @@
       <td class="club">Brentford</td>
       <td>MID</td>
       <td>£5.7</td>
-      <td class="own">13.1%</td>
+      <td class="own">13.2%</td>
       <td class="left muted">1 Aug</td>
     </tr>
     <tr>
@@ -1824,7 +1834,7 @@
       <td class="club">Spurs</td>
       <td>DEF</td>
       <td>£5.0</td>
-      <td class="own">7.9%</td>
+      <td class="own">7.8%</td>
       <td class="left muted">18 Jun</td>
     </tr>
     <tr>
@@ -2078,6 +2088,175 @@
     </div>
   </div>
 
+  <!-- ============ THE WEEK AHEAD ============ -->
+  <div class="section">
+    <div class="section-head"><h2>Playing The Next Five Weeks</h2><div class="line"></div></div>
+
+    <p class="lede">
+      You are not picking a team for Saturday, you are picking one for the next month.
+      Below is the published fixture difficulty for every club over the coming five
+      gameweeks, and the players whose underlying numbers say they have been unlucky.
+    </p>
+
+    <div class="scroll"><table>
+    <thead><tr><th class="left">Kindest run &mdash; GW3&ndash;7</th>
+    <th class="left">Opponents</th><th>Avg</th></tr></thead>
+    <tbody>
+    <tr>
+      <td class="player">Newcastle</td>
+      <td class="left"><span class="fd fd-mid" title="difficulty 3">BOU</span> <span class="fd fd-mid" title="difficulty 3">LEE<i>a</i></span> <span class="fd fd-easy" title="difficulty 2">HUL</span> <span class="fd fd-easy" title="difficulty 2">COV<i>a</i></span> <span class="fd fd-mid" title="difficulty 3">AVL</span></td>
+      <td><b>2.60</b></td>
+    </tr>
+    <tr>
+      <td class="player">Aston Villa</td>
+      <td class="left"><span class="fd fd-easy" title="difficulty 2">HUL<i>a</i></span> <span class="fd fd-mid" title="difficulty 3">NFO</span> <span class="fd fd-mid" title="difficulty 3">TOT<i>a</i></span> <span class="fd fd-mid" title="difficulty 3">BRE</span> <span class="fd fd-mid" title="difficulty 3">NEW<i>a</i></span></td>
+      <td><b>2.80</b></td>
+    </tr>
+    <tr>
+      <td class="player">Brighton</td>
+      <td class="left"><span class="fd fd-easy" title="difficulty 2">LEE</span> <span class="fd fd-easy" title="difficulty 2">COV<i>a</i></span> <span class="fd fd-hard" title="difficulty 4">ARS</span> <span class="fd fd-mid" title="difficulty 3">SUN<i>a</i></span> <span class="fd fd-mid" title="difficulty 3">CRY</span></td>
+      <td><b>2.80</b></td>
+    </tr>
+    <tr>
+      <td class="player">Crystal Palace</td>
+      <td class="left"><span class="fd fd-mid" title="difficulty 3">FUL<i>a</i></span> <span class="fd fd-easy" title="difficulty 2">IPS</span> <span class="fd fd-mid" title="difficulty 3">LEE<i>a</i></span> <span class="fd fd-mid" title="difficulty 3">NFO</span> <span class="fd fd-mid" title="difficulty 3">BHA<i>a</i></span></td>
+      <td><b>2.80</b></td>
+    </tr>
+    <tr>
+      <td class="player">Liverpool</td>
+      <td class="left"><span class="fd fd-easy" title="difficulty 2">IPS<i>a</i></span> <span class="fd fd-easy" title="difficulty 2">FUL</span> <span class="fd fd-mid" title="difficulty 3">BOU<i>a</i></span> <span class="fd fd-hard" title="difficulty 4">MCI</span> <span class="fd fd-mid" title="difficulty 3">BRE<i>a</i></span></td>
+      <td><b>2.80</b></td>
+    </tr>
+    <tr>
+      <td class="player">Man City</td>
+      <td class="left"><span class="fd fd-easy" title="difficulty 2">COV</span> <span class="fd fd-hard" title="difficulty 4">MUN<i>a</i></span> <span class="fd fd-easy" title="difficulty 2">SUN</span> <span class="fd fd-hard" title="difficulty 4">LIV<i>a</i></span> <span class="fd fd-easy" title="difficulty 2">IPS</span></td>
+      <td><b>2.80</b></td>
+    </tr></tbody>
+  </table></div>
+  <div class="scroll" style="margin-top:14px"><table>
+    <thead><tr><th class="left">Hardest run</th><th class="left">Opponents</th><th>Avg</th></tr></thead>
+    <tbody>
+    <tr>
+      <td class="player">Ipswich Town</td>
+      <td class="left"><span class="fd fd-hard" title="difficulty 4">LIV</span> <span class="fd fd-mid" title="difficulty 3">CRY<i>a</i></span> <span class="fd fd-mid" title="difficulty 3">EVE<i>a</i></span> <span class="fd fd-easy" title="difficulty 2">FUL</span> <span class="fd fd-hard" title="difficulty 5">MCI<i>a</i></span></td>
+      <td><b>3.40</b></td>
+    </tr>
+    <tr>
+      <td class="player">Leeds</td>
+      <td class="left"><span class="fd fd-mid" title="difficulty 3">BHA<i>a</i></span> <span class="fd fd-easy" title="difficulty 2">NEW</span> <span class="fd fd-mid" title="difficulty 3">CRY</span> <span class="fd fd-hard" title="difficulty 5">ARS<i>a</i></span> <span class="fd fd-hard" title="difficulty 4">MUN</span></td>
+      <td><b>3.40</b></td>
+    </tr>
+    <tr>
+      <td class="player">Sunderland</td>
+      <td class="left"><span class="fd fd-mid" title="difficulty 3">BRE<i>a</i></span> <span class="fd fd-hard" title="difficulty 4">ARS</span> <span class="fd fd-hard" title="difficulty 5">MCI<i>a</i></span> <span class="fd fd-easy" title="difficulty 2">BHA</span> <span class="fd fd-mid" title="difficulty 3">BOU<i>a</i></span></td>
+      <td><b>3.40</b></td>
+    </tr></tbody>
+  </table></div>
+  <p class="fig-note">
+    Fantasy Premier League's own difficulty rating, 1 (easiest) to 5 (hardest), averaged
+    across the next 5 gameweeks. Lower-case <i>a</i> marks an away trip.
+    This is published data, not our assessment.
+  </p>
+
+    <div class="section-head" style="margin-top:22px"><h2 class="sm">Doing Everything But Scoring</h2><div class="line"></div></div>
+
+    <div class="scroll"><table>
+    <thead><tr>
+      <th class="left">Player</th><th class="left">Club</th><th>Price</th>
+      <th>xGI</th><th>G+A</th><th>Owned</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+      <td class="player">Thiago</td>
+      <td class="club">Brentford</td>
+      <td>£8.0</td>
+      <td>1.89</td>
+      <td>0</td>
+      <td class="own">14.5%</td>
+    </tr>
+    <tr>
+      <td class="player">Nketiah</td>
+      <td class="club">Crystal Palace</td>
+      <td>£5.5</td>
+      <td>1.54</td>
+      <td>0</td>
+      <td class="own">0.5%</td>
+    </tr>
+    <tr>
+      <td class="player">Isak</td>
+      <td class="club">Liverpool</td>
+      <td>£9.0</td>
+      <td>2.09</td>
+      <td>1</td>
+      <td class="own">16.5%</td>
+    </tr>
+    <tr>
+      <td class="player">Barry</td>
+      <td class="club">Everton</td>
+      <td>£5.5</td>
+      <td>2.02</td>
+      <td>1</td>
+      <td class="own">4.4%</td>
+    </tr>
+    <tr>
+      <td class="player">Igor Jesus</td>
+      <td class="club">Nott'm Forest</td>
+      <td>£5.9</td>
+      <td>1.02</td>
+      <td>0</td>
+      <td class="own">3.2%</td>
+    </tr>
+    <tr>
+      <td class="player">Awoniyi</td>
+      <td class="club">Coventry City</td>
+      <td>£5.5</td>
+      <td>0.96</td>
+      <td>0</td>
+      <td class="own">0.7%</td>
+    </tr>
+    <tr>
+      <td class="player">Rúben</td>
+      <td class="club">Man City</td>
+      <td>£5.5</td>
+      <td>0.80</td>
+      <td>0</td>
+      <td class="own">1.8%</td>
+    </tr></tbody>
+  </table></div>
+  <p class="fig-note">
+    xGI is expected goal involvement — what a player's shots and chances have been worth.
+    G+A is what has actually gone in. These are the biggest gaps in the game among
+    players with at least ninety minutes.
+  </p>
+
+    <div class="section-head" style="margin-top:22px"><h2 class="sm">Chips In Hand</h2><div class="line"></div></div>
+
+    <p>
+      The one thing no website can tell you, because it depends on these twenty squads.
+      A wildcard is worth more the longer you hold it, and knowing who has already burned
+      one tells you who can still restructure.
+    </p>
+
+    
+  <div class="promoted-box">
+    <div class="promoted-stat">19<span>of 20</span></div>
+    <div>
+      <b>still have every chip in hand after Gameweek 2.</b>
+      <ul class="promoted-list"><li><b>La Curva FC</b> played Bench Boost in GW2</li></ul>
+    </div>
+  </div>
+
+    <div class="note-box">
+      <b>What this section is.</b> Fixture ratings and expected-goal figures are published
+      by the game itself; the chip count comes from this league's own squads. None of it
+      is a recommendation. For actual verdicts, the Premier League's analysts write them
+      every week:
+      <ul class="reading"><li><a href="https://www.premierleague.com/en/news/4705463/fpl-gw3-wildcard-squad-how-to-own-haaland-fernandes-joao-pedro-and-palmer" rel="noopener">FPL GW3 wildcard squad: how to own Haaland, Fernandes, Joao Pedro and Palmer</a>
+     <span class="muted">Premier League</span></li><li><a href="https://www.premierleague.com/en/news/4705515/buy-keep-or-sell-what-to-do-with-these-11-players-in-fantasy" rel="noopener">Buy, keep or sell: what to do with these 11 players in Fantasy</a>
+     <span class="muted">Premier League</span></li></ul>
+    </div>
+  </div>
+
   <!-- ============ THE MARKET ============ -->
   <div class="section">
     <div class="section-head"><h2>What Everyone Else Is Doing</h2><div class="line"></div></div>
@@ -2100,23 +2279,23 @@
       <td class="player">Cherki</td>
       <td class="club">Man City</td>
       <td>£7.7</td>
-      <td class="up">+1,229k</td>
-      <td class="own">25.5%</td>
+      <td class="up">+1,236k</td>
+      <td class="own">25.6%</td>
       <td class="">2 of 20</td>
     </tr>
     <tr class="flag">
       <td class="player">Wissa</td>
       <td class="club">Newcastle</td>
       <td>£6.1</td>
-      <td class="up">+682k</td>
-      <td class="own">11.4%</td>
+      <td class="up">+688k</td>
+      <td class="own">11.5%</td>
       <td class="muted">0 of 20</td>
     </tr>
     <tr>
       <td class="player">Elanga</td>
       <td class="club">Newcastle</td>
       <td>£6.1</td>
-      <td class="up">+536k</td>
+      <td class="up">+539k</td>
       <td class="own">8.2%</td>
       <td class="">1 of 20</td>
     </tr>
@@ -2124,15 +2303,15 @@
       <td class="player">De Cuyper</td>
       <td class="club">Brighton</td>
       <td>£4.7</td>
-      <td class="up">+529k</td>
-      <td class="own">14.7%</td>
+      <td class="up">+532k</td>
+      <td class="own">14.8%</td>
       <td class="">3 of 20</td>
     </tr>
     <tr class="flag">
       <td class="player">Ajayi</td>
       <td class="club">Hull City</td>
       <td>£4.1</td>
-      <td class="up">+450k</td>
+      <td class="up">+452k</td>
       <td class="own">7.9%</td>
       <td class="muted">0 of 20</td>
     </tr>
@@ -2140,7 +2319,7 @@
       <td class="player">Hall</td>
       <td class="club">Newcastle</td>
       <td>£5.1</td>
-      <td class="up">+383k</td>
+      <td class="up">+385k</td>
       <td class="own">8.5%</td>
       <td class="">1 of 20</td>
     </tr>
@@ -2148,15 +2327,15 @@
       <td class="player">M.Sangaré</td>
       <td class="club">Brentford</td>
       <td>£5.7</td>
-      <td class="up">+379k</td>
-      <td class="own">13.1%</td>
+      <td class="up">+382k</td>
+      <td class="own">13.2%</td>
       <td class="">2 of 20</td>
     </tr>
     <tr>
       <td class="player">Gvardiol</td>
       <td class="club">Man City</td>
       <td>£5.6</td>
-      <td class="up">+374k</td>
+      <td class="up">+376k</td>
       <td class="own">17.8%</td>
       <td class="">4 of 20</td>
     </tr></tbody></table></div>
@@ -2171,7 +2350,7 @@
       <td class="player">Mbeumo</td>
       <td class="club">Man Utd</td>
       <td>£8.0</td>
-      <td class="down">&minus;497k</td>
+      <td class="down">&minus;501k</td>
       <td class="own">29.9%</td>
       <td class="down">14 of 20</td>
     </tr>
@@ -2179,7 +2358,7 @@
       <td class="player">Tzolis</td>
       <td class="club">Arsenal</td>
       <td>£6.5</td>
-      <td class="down">&minus;372k</td>
+      <td class="down">&minus;375k</td>
       <td class="own">21.9%</td>
       <td class="">6 of 20</td>
     </tr>
@@ -2187,7 +2366,7 @@
       <td class="player">Semenyo</td>
       <td class="club">Man City</td>
       <td>£8.5</td>
-      <td class="down">&minus;291k</td>
+      <td class="down">&minus;292k</td>
       <td class="own">20.7%</td>
       <td class="">3 of 20</td>
     </tr>
@@ -2195,31 +2374,31 @@
       <td class="player">Szoboszlai</td>
       <td class="club">Liverpool</td>
       <td>£7.0</td>
-      <td class="down">&minus;268k</td>
+      <td class="down">&minus;269k</td>
       <td class="own">41.5%</td>
       <td class="">6 of 20</td>
-    </tr>
-    <tr>
-      <td class="player">B.Fernandes</td>
-      <td class="club">Man Utd</td>
-      <td>£12.0</td>
-      <td class="down">&minus;231k</td>
-      <td class="own">48.6%</td>
-      <td class="">9 of 20</td>
     </tr>
     <tr>
       <td class="player">Ndiaye</td>
       <td class="club">Man City</td>
       <td>£6.0</td>
-      <td class="down">&minus;231k</td>
+      <td class="down">&minus;234k</td>
       <td class="own">13.7%</td>
       <td class="">4 of 20</td>
+    </tr>
+    <tr>
+      <td class="player">B.Fernandes</td>
+      <td class="club">Man Utd</td>
+      <td>£12.0</td>
+      <td class="down">&minus;233k</td>
+      <td class="own">48.6%</td>
+      <td class="">9 of 20</td>
     </tr>
     <tr>
       <td class="player">Brobbey</td>
       <td class="club">Sunderland</td>
       <td>£5.9</td>
-      <td class="down">&minus;229k</td>
+      <td class="down">&minus;231k</td>
       <td class="own">10.1%</td>
       <td class="">1 of 20</td>
     </tr>
@@ -2227,23 +2406,19 @@
       <td class="player">Gabriel</td>
       <td class="club">Arsenal</td>
       <td>£8.0</td>
-      <td class="down">&minus;226k</td>
+      <td class="down">&minus;227k</td>
       <td class="own">26.4%</td>
       <td class="">3 of 20</td>
     </tr></tbody></table></div>
     </div>
   </div>
-  <div class="note-box"><b>Still holding what the world is dumping:</b> Mbeumo (14 of 20).<br><br><b>Nobody here owns:</b> Wissa (682k transfers in), Ajayi (450k transfers in).</div>
+  <div class="note-box"><b>Still holding what the world is dumping:</b> Mbeumo (14 of 20).<br><br><b>Nobody here owns:</b> Wissa (688k transfers in), Ajayi (452k transfers in).</div>
 
     <div class="note-box">
       <b>This is a market report, not advice.</b> The Times tells you what happened and
       what this league owns; it does not tell you who to sell. If you want opinions,
       the Premier League's own site runs a weekly
-      <i>Buy, keep or sell</i> column and a wildcard-squad guide, written by people paid
-      to have them:
-      <ul class="reading"><li><a href="https://www.premierleague.com/en/news/4705463/fpl-gw3-wildcard-squad-how-to-own-haaland-fernandes-joao-pedro-and-palmer" rel="noopener">FPL GW3 wildcard squad: how to own Haaland, Fernandes, Joao Pedro and Palmer</a>
-     <span class="muted">Premier League</span></li><li><a href="https://www.premierleague.com/en/news/4705515/buy-keep-or-sell-what-to-do-with-these-11-players-in-fantasy" rel="noopener">Buy, keep or sell: what to do with these 11 players in Fantasy</a>
-     <span class="muted">Premier League</span></li></ul>
+      <i>Buy, keep or sell</i> column and a wildcard-squad guide, both linked above.
     </div>
   </div>
 
@@ -2285,7 +2460,7 @@
       <td class="player">Saka</td>
       <td class="club">Arsenal</td>
       <td>£9.5</td>
-      <td class="own">10.5%</td>
+      <td class="own">10.6%</td>
     </tr>
     <tr>
       <td class="player">Isak</td>
@@ -2363,7 +2538,7 @@
       <td class="player">Calvert-Lewin</td>
       <td class="club">Leeds</td>
       <td>£6.0</td>
-      <td class="own">26.6%</td>
+      <td class="own">26.5%</td>
     </tr></tbody>
   </table></div></div>
     </div>
@@ -2386,21 +2561,21 @@
       <td class="club">Man City</td>
       <td class="up">+0.2</td>
       <td>£7.7</td>
-      <td class="own">25.5%</td>
+      <td class="own">25.6%</td>
     </tr>
     <tr>
       <td class="player">De Cuyper</td>
       <td class="club">Brighton</td>
       <td class="up">+0.2</td>
       <td>£4.7</td>
-      <td class="own">14.7%</td>
+      <td class="own">14.8%</td>
     </tr>
     <tr>
       <td class="player">M.Sangaré</td>
       <td class="club">Brentford</td>
       <td class="up">+0.2</td>
       <td>£5.7</td>
-      <td class="own">13.1%</td>
+      <td class="own">13.2%</td>
     </tr>
     <tr>
       <td class="player">Calafiori</td>
@@ -2428,7 +2603,7 @@
       <td class="club">Newcastle</td>
       <td class="up">+0.1</td>
       <td>£6.1</td>
-      <td class="own">11.4%</td>
+      <td class="own">11.5%</td>
     </tr>
     <tr>
       <td class="player">Ødegaard</td>
@@ -2498,7 +2673,7 @@
       <td class="club">Sunderland</td>
       <td class="down">-0.1</td>
       <td>£5.9</td>
-      <td class="own">6.6%</td>
+      <td class="own">6.5%</td>
     </tr>
     <tr>
       <td class="player">Senesi</td>
@@ -3127,6 +3302,11 @@
     <div class="section-head" style="margin-top:18px"><h2 class="sm">On the Wire</h2><div class="line"></div></div>
     <ul class="news-list">
     <li>
+      <div class="hl">Transfer rumors, news: Feyenoord eye loan move for Man United's Obi</div>
+      <div class="hl-desc">Manchester United striker Chido Obi is reportedly linked with a move to Feyenoord. Transfer Talk has the latest.</div>
+      <div class="hl-meta">2026-09-02 · ESPN · ESPN</div>
+    </li>
+    <li>
       <div class="hl">Enzo Fernández: Dream to be at club as 'big' as Man City</div>
       <div class="hl-desc">Enzo Fernández said he had always dreamed of playing for &quot;a club as big as Manchester City&quot; in his first interview since completing his big-money transfer from Chelsea.</div>
       <div class="hl-meta">2026-09-02 · ESPN News Services · ESPN</div>
@@ -3149,11 +3329,6 @@
     <li>
       <div class="hl">Nicol: Spurs have had the worst transfer window</div>
       <div class="hl-desc">Nicol: Spurs have had the worst transfer window</div>
-      <div class="hl-meta">2026-09-02 · ESPN</div>
-    </li>
-    <li>
-      <div class="hl">Ogden: Balogun 'left Everton's transfer window in tatters'</div>
-      <div class="hl-desc">Ogden: Balogun 'left Everton's transfer window in tatters'</div>
       <div class="hl-meta">2026-09-02 · ESPN</div>
     </li></ul>
 
@@ -3178,23 +3353,23 @@
       <div class="hl-meta">ESPN · 31 Aug 2026</div>
     </li>
     <li>
-      <div class="rm">Romano reveals Man Utd 'DEAL DONE' for striker with medical 'today' - 'here we go'</div>
-      <div class="hl-meta">Football365 · 02 Sep 2026</div>
-    </li>
-    <li>
-      <div class="rm">Romano confirms Arsenal's first 2027 signing will be done 'this week' after 'deal agreed'</div>
-      <div class="hl-meta">Football365 · 02 Sep 2026</div>
-    </li>
-    <li>
-      <div class="rm">Romano reveals Richarlison transfer 'agreement' details; Tottenham react to £20m 'offer'</div>
-      <div class="hl-meta">Football365 · 02 Sep 2026</div>
-    </li>
-    <li>
-      <div class="rm">Fabrizio Romano gives ‘here we go’ to first Arsenal transfer of deadline day</div>
+      <div class="rm">Romano reveals Chelsea 'here we go' for 'agreed' deadline day signing - 'crazy saga' ends</div>
       <div class="hl-meta">Football365 · 01 Sep 2026</div>
     </li>
     <li>
       <div class="rm">Romano gives Liverpool ‘here we go’ to attacker signing after Cody Gakpo update</div>
+      <div class="hl-meta">Football365 · 31 Aug 2026</div>
+    </li>
+    <li>
+      <div class="rm">Romano reveals Barcelona decision on late Julian Alvarez move after Arsenal transfer</div>
+      <div class="hl-meta">Football365 · 01 Sep 2026</div>
+    </li>
+    <li>
+      <div class="rm">Romano confirms Man Utd transfer is off, but alternative deal 'here we go' confirmed for €17m</div>
+      <div class="hl-meta">Football365 · 31 Aug 2026</div>
+    </li>
+    <li>
+      <div class="rm">‘I can guarantee 100%’ – Romano reveals next Liverpool transfer ‘agreement is done’</div>
       <div class="hl-meta">Football365 · 31 Aug 2026</div>
     </li></ul>
     <div class="note-box">
