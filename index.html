@@ -284,6 +284,25 @@
   .flops li { padding: 4px 0; }
   .owes { color: var(--red); }
 
+  .gag {
+    display: flex; gap: 18px; align-items: center; margin: 12px 0;
+    border-left: 5px solid var(--navy); background: var(--paper-2); padding: 14px 18px;
+  }
+  .gag-stat {
+    font-size: 44px; font-weight: 700; color: var(--navy); line-height: .9;
+    text-align: center; white-space: nowrap;
+  }
+  .gag-stat span {
+    display: block; font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--ink-soft); font-weight: 400;
+  }
+  .gag-block { margin: 16px 0 0; }
+  .gag-title {
+    font-family: Arial, sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: .1em; text-transform: uppercase; color: var(--navy);
+    padding-bottom: 6px; margin-bottom: 8px; border-bottom: 1px solid var(--rule);
+  }
+
   .reading { margin: 10px 0 0; padding-left: 18px; font-size: 13.5px; }
   .reading li { padding: 3px 0; }
   .reading a { color: var(--navy); }
@@ -1721,9 +1740,9 @@
       <text x="158" y="260" text-anchor="end" font-size="9.5"
             font-family="Arial,sans-serif" fill="#4a4234"
             letter-spacing=".05em">CHELSEA</text>
-      <rect x="168" y="236" width="103.61445783132531" height="15" rx="4" fill="#0b6ec7"/>
-      <text x="279.6144578313253" y="248" font-size="12"
-            font-family="ui-monospace,Consolas,monospace" fill="#201b14">8.6%</text>
+      <rect x="168" y="236" width="102.40963855421687" height="15" rx="4" fill="#0b6ec7"/>
+      <text x="278.4096385542169" y="248" font-size="12"
+            font-family="ui-monospace,Consolas,monospace" fill="#201b14">8.5%</text>
     </g>
     <g>
       <text x="158" y="278" text-anchor="end" font-size="12.5"
@@ -1816,14 +1835,14 @@
       <td class="club">Chelsea</td>
       <td>DEF</td>
       <td>£6.0</td>
-      <td class="own">8.6%</td>
+      <td class="own">8.5%</td>
       <td class="left muted">30 Jul</td>
     </tr>
     <tr>
       <td class="player">Van Hecke</td>
       <td class="club">Spurs</td>
       <td>DEF</td>
-      <td>£5.0</td>
+      <td>£4.9</td>
       <td class="own">7.8%</td>
       <td class="left muted">18 Jun</td>
     </tr>
@@ -1831,7 +1850,7 @@
       <td class="player">Tzolakis</td>
       <td class="club">Hull City</td>
       <td>GKP</td>
-      <td>£4.5</td>
+      <td>£4.6</td>
       <td class="own">7%</td>
       <td class="left muted">5 Aug</td>
     </tr>
@@ -1951,7 +1970,7 @@
       <td class="player">Bruno G.</td>
       <td class="club">Arsenal</td>
       <td>MID</td>
-      <td>£6.9</td>
+      <td>£6.8</td>
       <td class="own">2.2%</td>
       <td class="left muted">8 Aug</td>
     </tr>
@@ -1975,7 +1994,7 @@
       <td class="player">Tielemans</td>
       <td class="club">Man Utd</td>
       <td>MID</td>
-      <td>£6.0</td>
+      <td>£5.9</td>
       <td class="own">2.1%</td>
       <td class="left muted">14 Jul</td>
     </tr>
@@ -2078,6 +2097,64 @@
     </div>
   </div>
 
+  <!-- ============ SIDESHOW ============ -->
+  <div class="section">
+    <div class="section-head"><h2>The Sideshow</h2><div class="line"></div></div>
+
+    <p class="lede">
+      Twenty squads, picked in private, and some of what came out of them is worth
+      putting on the record.
+    </p>
+
+    
+    <div class="gag">
+      <div class="gag-stat">12<span>of 15</span></div>
+      <div>
+        <b>Super Maz FFC</b> and <b>Cracks United</b> are playing almost the same team.
+        12 of 15 players in common — two managers, one squad, and only one
+        of them can be right about it.
+      </div>
+    </div>
+
+    <div class="gag">
+      <div class="gag-stat">0<span>of 15</span></div>
+      <div>
+        At the other end, <b>Eze Come Eze Go</b> and <b>TEAM OFFEI</b> have
+        <b>not a single player</b> in common.
+        Two squads picked from the same twenty clubs with nothing whatsoever in between them.
+      </div>
+    </div>
+
+    <div class="gag-block">
+      <div class="gag-title">The armband was on the wrong man</div>
+      <ul class="flops">
+      <li>
+        <b>Fragata</b> captained Haaland for 13
+        — the vice-captain, B.Fernandes, scored <b>23</b>.
+        <span class="muted">Cost: 20 points.</span>
+      </li>
+      <li>
+        <b>Havok1</b> captained Haaland for 13
+        — the vice-captain, B.Fernandes, scored <b>23</b>.
+        <span class="muted">Cost: 20 points.</span>
+      </li>
+      <li>
+        <b>Eze Come Eze Go</b> captained Szoboszlai for 4
+        — the vice-captain, João Pedro, scored <b>9</b>.
+        <span class="muted">Cost: 10 points.</span>
+      </li></ul>
+    </div>
+
+    <div class="gag-block">
+      <div class="gag-title">Nobody else had them</div>
+      <p>
+        <b>Gibbs-White</b> scored 13 and was owned by exactly one manager
+        in this league — <b>MacDowell's</b>.
+        The other side of going it alone: Furlong (Heavy T's Steaksauce, 1), Yarmoliuk (Barriguita, 1), Bijol (La Curva FC, 1).
+      </p>
+    </div>
+  </div>
+
   <!-- ============ THE MARKET ============ -->
   <div class="section">
     <div class="section-head"><h2>What Everyone Else Is Doing</h2><div class="line"></div></div>
@@ -2100,7 +2177,7 @@
       <td class="player">Cherki</td>
       <td class="club">Man City</td>
       <td>£7.7</td>
-      <td class="up">+1,240k</td>
+      <td class="up">+1,243k</td>
       <td class="own">25.7%</td>
       <td class="">2 of 20</td>
     </tr>
@@ -2108,7 +2185,7 @@
       <td class="player">Wissa</td>
       <td class="club">Newcastle</td>
       <td>£6.1</td>
-      <td class="up">+691k</td>
+      <td class="up">+693k</td>
       <td class="own">11.5%</td>
       <td class="">0 of 20</td>
     </tr>
@@ -2116,15 +2193,15 @@
       <td class="player">Elanga</td>
       <td class="club">Newcastle</td>
       <td>£6.1</td>
-      <td class="up">+541k</td>
-      <td class="own">8.2%</td>
+      <td class="up">+543k</td>
+      <td class="own">8.3%</td>
       <td class="">1 of 20</td>
     </tr>
     <tr>
       <td class="player">De Cuyper</td>
       <td class="club">Brighton</td>
       <td>£4.7</td>
-      <td class="up">+534k</td>
+      <td class="up">+536k</td>
       <td class="own">14.8%</td>
       <td class="">3 of 20</td>
     </tr>
@@ -2132,7 +2209,7 @@
       <td class="player">Ajayi</td>
       <td class="club">Hull City</td>
       <td>£4.1</td>
-      <td class="up">+454k</td>
+      <td class="up">+455k</td>
       <td class="own">8%</td>
       <td class="">0 of 20</td>
     </tr>
@@ -2140,7 +2217,7 @@
       <td class="player">Hall</td>
       <td class="club">Newcastle</td>
       <td>£5.1</td>
-      <td class="up">+387k</td>
+      <td class="up">+388k</td>
       <td class="own">8.5%</td>
       <td class="">1 of 20</td>
     </tr>
@@ -2148,7 +2225,7 @@
       <td class="player">M.Sangaré</td>
       <td class="club">Brentford</td>
       <td>£5.7</td>
-      <td class="up">+384k</td>
+      <td class="up">+385k</td>
       <td class="own">13.2%</td>
       <td class="">2 of 20</td>
     </tr>
@@ -2156,7 +2233,7 @@
       <td class="player">Gvardiol</td>
       <td class="club">Man City</td>
       <td>£5.6</td>
-      <td class="up">+378k</td>
+      <td class="up">+379k</td>
       <td class="own">17.8%</td>
       <td class="">4 of 20</td>
     </tr></tbody></table></div>
@@ -2171,7 +2248,7 @@
       <td class="player">Mbeumo</td>
       <td class="club">Man Utd</td>
       <td>£8.0</td>
-      <td class="down">&minus;503k</td>
+      <td class="down">&minus;504k</td>
       <td class="own">29.8%</td>
       <td class="down">14 of 20</td>
     </tr>
@@ -2179,7 +2256,7 @@
       <td class="player">Tzolis</td>
       <td class="club">Arsenal</td>
       <td>£6.5</td>
-      <td class="down">&minus;377k</td>
+      <td class="down">&minus;379k</td>
       <td class="own">21.9%</td>
       <td class="">6 of 20</td>
     </tr>
@@ -2187,7 +2264,7 @@
       <td class="player">Semenyo</td>
       <td class="club">Man City</td>
       <td>£8.5</td>
-      <td class="down">&minus;293k</td>
+      <td class="down">&minus;294k</td>
       <td class="own">20.7%</td>
       <td class="">3 of 20</td>
     </tr>
@@ -2195,7 +2272,7 @@
       <td class="player">Szoboszlai</td>
       <td class="club">Liverpool</td>
       <td>£7.0</td>
-      <td class="down">&minus;270k</td>
+      <td class="down">&minus;271k</td>
       <td class="own">41.5%</td>
       <td class="">6 of 20</td>
     </tr>
@@ -2203,7 +2280,7 @@
       <td class="player">Ndiaye</td>
       <td class="club">Man City</td>
       <td>£6.0</td>
-      <td class="down">&minus;235k</td>
+      <td class="down">&minus;237k</td>
       <td class="own">13.7%</td>
       <td class="">4 of 20</td>
     </tr>
@@ -2211,7 +2288,7 @@
       <td class="player">B.Fernandes</td>
       <td class="club">Man Utd</td>
       <td>£12.0</td>
-      <td class="down">&minus;233k</td>
+      <td class="down">&minus;234k</td>
       <td class="own">48.6%</td>
       <td class="">9 of 20</td>
     </tr>
@@ -2219,7 +2296,7 @@
       <td class="player">Brobbey</td>
       <td class="club">Sunderland</td>
       <td>£5.9</td>
-      <td class="down">&minus;231k</td>
+      <td class="down">&minus;232k</td>
       <td class="own">10.1%</td>
       <td class="">1 of 20</td>
     </tr>
@@ -2227,7 +2304,7 @@
       <td class="player">Gabriel</td>
       <td class="club">Arsenal</td>
       <td>£8.0</td>
-      <td class="down">&minus;228k</td>
+      <td class="down">&minus;229k</td>
       <td class="own">26.4%</td>
       <td class="">3 of 20</td>
     </tr></tbody></table></div>
@@ -2456,7 +2533,7 @@
       <td class="club">Newcastle</td>
       <td class="up">+0.1</td>
       <td>£6.1</td>
-      <td class="own">8.2%</td>
+      <td class="own">8.3%</td>
     </tr>
     <tr>
       <td class="player">Ajayi</td>
@@ -2464,6 +2541,13 @@
       <td class="up">+0.1</td>
       <td>£4.1</td>
       <td class="own">8%</td>
+    </tr>
+    <tr>
+      <td class="player">Tzolakis</td>
+      <td class="club">Hull City</td>
+      <td class="up">+0.1</td>
+      <td>£4.6</td>
+      <td class="own">7%</td>
     </tr>
     <tr>
       <td class="player">Konsa</td>
@@ -2485,6 +2569,13 @@
       <td class="down">-0.1</td>
       <td>£7.9</td>
       <td class="own">9.3%</td>
+    </tr>
+    <tr>
+      <td class="player">Van Hecke</td>
+      <td class="club">Spurs</td>
+      <td class="down">-0.1</td>
+      <td>£4.9</td>
+      <td class="own">7.8%</td>
     </tr>
     <tr>
       <td class="player">Muñoz</td>
@@ -2550,13 +2641,6 @@
       <td class="own">3%</td>
     </tr>
     <tr>
-      <td class="player">Bruno G.</td>
-      <td class="club">Arsenal</td>
-      <td class="down">-0.1</td>
-      <td>£6.9</td>
-      <td class="own">2.2%</td>
-    </tr>
-    <tr>
       <td class="player">Araujo</td>
       <td class="club">Liverpool</td>
       <td class="down">-0.1</td>
@@ -2568,6 +2652,13 @@
       <td class="club">Chelsea</td>
       <td class="down">-0.1</td>
       <td>£5.4</td>
+      <td class="own">2.1%</td>
+    </tr>
+    <tr>
+      <td class="player">Tielemans</td>
+      <td class="club">Man Utd</td>
+      <td class="down">-0.1</td>
+      <td>£5.9</td>
       <td class="own">2.1%</td>
     </tr>
     <tr>
@@ -2613,13 +2704,6 @@
       <td class="own">1.5%</td>
     </tr>
     <tr>
-      <td class="player">Woltemade</td>
-      <td class="club">Newcastle</td>
-      <td class="down">-0.1</td>
-      <td>£5.9</td>
-      <td class="own">1.3%</td>
-    </tr>
-    <tr>
       <td class="player">Wood</td>
       <td class="club">Nott'm Forest</td>
       <td class="down">-0.1</td>
@@ -2645,6 +2729,13 @@
       <td class="club">Newcastle</td>
       <td class="down">-0.1</td>
       <td>£4.9</td>
+      <td class="own">1.2%</td>
+    </tr>
+    <tr>
+      <td class="player">Woltemade</td>
+      <td class="club">Newcastle</td>
+      <td class="down">-0.1</td>
+      <td>£5.9</td>
       <td class="own">1.2%</td>
     </tr>
     <tr>
@@ -2697,6 +2788,13 @@
       <td class="own">0.8%</td>
     </tr>
     <tr>
+      <td class="player">Andrey Santos</td>
+      <td class="club">Man Utd</td>
+      <td class="down">-0.1</td>
+      <td>£4.9</td>
+      <td class="own">0.8%</td>
+    </tr>
+    <tr>
       <td class="player">Dorgu</td>
       <td class="club">Man Utd</td>
       <td class="down">-0.1</td>
@@ -2725,10 +2823,17 @@
       <td class="own">0.6%</td>
     </tr>
     <tr>
-      <td class="player">Amad</td>
-      <td class="club">Man Utd</td>
+      <td class="player">Osula</td>
+      <td class="club">Newcastle</td>
       <td class="down">-0.1</td>
       <td>£5.9</td>
+      <td class="own">0.6%</td>
+    </tr>
+    <tr>
+      <td class="player">I.Sangaré</td>
+      <td class="club">Nott'm Forest</td>
+      <td class="down">-0.1</td>
+      <td>£4.9</td>
       <td class="own">0.6%</td>
     </tr>
     <tr>
@@ -2778,6 +2883,13 @@
       <td class="club">Arsenal</td>
       <td class="down">-0.1</td>
       <td>£5.9</td>
+      <td class="own">0.3%</td>
+    </tr>
+    <tr>
+      <td class="player">Canvot</td>
+      <td class="club">Crystal Palace</td>
+      <td class="down">-0.1</td>
+      <td>£4.9</td>
       <td class="own">0.3%</td>
     </tr>
     <tr>
@@ -2839,6 +2951,13 @@
     <tr>
       <td class="player">Dowman</td>
       <td class="club">Arsenal</td>
+      <td class="down">-0.1</td>
+      <td>£5.4</td>
+      <td class="own">0.1%</td>
+    </tr>
+    <tr>
+      <td class="player">Bailey</td>
+      <td class="club">Aston Villa</td>
       <td class="down">-0.1</td>
       <td>£5.4</td>
       <td class="own">0.1%</td>
@@ -2911,6 +3030,13 @@
       <td class="club">Ipswich Town</td>
       <td class="down">-0.1</td>
       <td>£5.4</td>
+      <td class="own">0.1%</td>
+    </tr>
+    <tr>
+      <td class="player">Mamardashvili</td>
+      <td class="club">Liverpool</td>
+      <td class="down">-0.1</td>
+      <td>£4.9</td>
       <td class="own">0.1%</td>
     </tr>
     <tr>
@@ -3012,6 +3138,13 @@
       <td class="own">0%</td>
     </tr>
     <tr>
+      <td class="player">Kevin</td>
+      <td class="club">Fulham</td>
+      <td class="down">-0.1</td>
+      <td>£5.4</td>
+      <td class="own">0%</td>
+    </tr>
+    <tr>
       <td class="player">Ogbene</td>
       <td class="club">Ipswich Town</td>
       <td class="down">-0.1</td>
@@ -3075,11 +3208,25 @@
       <td class="own">5.2%</td>
     </tr>
     <tr>
+      <td class="player">Bruno G.</td>
+      <td class="club">Arsenal</td>
+      <td class="down">-0.2</td>
+      <td>£6.8</td>
+      <td class="own">2.2%</td>
+    </tr>
+    <tr>
       <td class="player">Sarr</td>
       <td class="club">Crystal Palace</td>
       <td class="down">-0.2</td>
       <td>£6.3</td>
       <td class="own">1.4%</td>
+    </tr>
+    <tr>
+      <td class="player">Amad</td>
+      <td class="club">Man Utd</td>
+      <td class="down">-0.2</td>
+      <td>£5.8</td>
+      <td class="own">0.6%</td>
     </tr>
     <tr>
       <td class="player">Martinelli</td>
@@ -3090,8 +3237,8 @@
     </tr></tbody>
   </table></div>
   <p class="fig-note">
-    102 players have changed price since
-    the season began — 13 up, 89 down. Prices move overnight on
+    112 players have changed price since
+    the season began — 14 up, 98 down. Prices move overnight on
     transfer volume, so an early riser is the crowd moving, not the game rewarding form.
   </p>
   </div>
@@ -3178,12 +3325,12 @@
       <div class="hl-meta">ESPN · 31 Aug 2026</div>
     </li>
     <li>
-      <div class="rm">Romano reveals Richarlison transfer 'agreement' details; Tottenham react to £20m 'offer'</div>
+      <div class="rm">Romano confirms Arsenal's first 2027 signing will be done 'this week' after 'deal agreed'</div>
       <div class="hl-meta">Football365 · 02 Sep 2026</div>
     </li>
     <li>
-      <div class="rm">Romano reveals Chelsea 'here we go' for 'agreed' deadline day signing - 'crazy saga' ends</div>
-      <div class="hl-meta">Football365 · 01 Sep 2026</div>
+      <div class="rm">Romano reveals Richarlison transfer 'agreement' details; Tottenham react to £20m 'offer'</div>
+      <div class="hl-meta">Football365 · 02 Sep 2026</div>
     </li>
     <li>
       <div class="rm">Chelsea 'furious' as Romano confirms deal 'cancelled' in 'deeply unprofessional' act</div>
@@ -3194,7 +3341,7 @@
       <div class="hl-meta">Football365 · 31 Aug 2026</div>
     </li>
     <li>
-      <div class="rm">Romano reveals Barcelona decision on late Julian Alvarez move after Arsenal transfer</div>
+      <div class="rm">Romano drops huge Man Utd left-back update on deadline day as decision is made</div>
       <div class="hl-meta">Football365 · 01 Sep 2026</div>
     </li></ul>
     <div class="note-box">
