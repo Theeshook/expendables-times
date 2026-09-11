@@ -201,62 +201,20 @@
 
   .pending td { opacity: .72; }
 
-  .prize-hero {
-    display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;
-    align-items: center; border: 3px double var(--gold); background: var(--paper-2);
-    padding: 20px 24px; margin: 16px 0 14px;
-  }
-  .prize-hero-k {
-    font-family: Arial, sans-serif; font-size: 11px; letter-spacing: .18em;
-    text-transform: uppercase; color: var(--ink-soft);
-  }
-  .prize-hero-v {
-    font-size: clamp(46px, 11vw, 74px); line-height: 1; color: var(--gold);
-    font-weight: 700; letter-spacing: -.02em;
-  }
-  .prize-hero-sub { font-size: 14px; color: var(--ink-soft); margin-top: 6px; }
-  .prize-hero-sub b { color: var(--green); }
-  .prize-hero-split { display: flex; gap: 22px; flex-wrap: wrap; }
-  .prize-hero-split div {
-    font-family: Arial, sans-serif; font-size: 10.5px; letter-spacing: .08em;
-    text-transform: uppercase; color: var(--ink-soft); text-align: center;
-  }
-  .prize-hero-split span {
-    display: block; font-family: Georgia, serif; font-size: 26px;
-    color: var(--ink); letter-spacing: 0; text-transform: none;
-  }
-
   .prize-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
-    gap: 10px;
+    display: flex; flex-wrap: wrap; gap: 1px; background: var(--rule);
+    border: 1px solid var(--rule); margin: 6px 0 0;
   }
   .prize {
-    border: 1px solid var(--rule); background: var(--paper-2);
-    padding: 14px 12px; text-align: center;
+    background: var(--paper-2); padding: 8px 12px; flex: 1; min-width: 104px;
+    display: flex; align-items: baseline; gap: 6px; white-space: nowrap;
   }
-  .prize-icon { font-size: 22px; line-height: 1; }
-  .prize-amt {
-    font-size: 27px; font-weight: 700; color: var(--red); margin-top: 5px; line-height: 1;
+  .prize-icon { font-size: 12px; }
+  .prize-amt { font-size: 16px; font-weight: 700; color: var(--red); }
+  .prize-label {
+    font-family: Arial, sans-serif; font-size: 9.5px; letter-spacing: .04em;
+    text-transform: uppercase; color: var(--ink-soft);
   }
-  .prize-each {
-    font-family: Arial, sans-serif; font-size: 9.5px; letter-spacing: .08em;
-    text-transform: uppercase; color: var(--ink-soft); margin-top: 2px;
-  }
-  .prize-label { font-size: 13px; font-weight: 700; margin-top: 6px; line-height: 1.25; }
-  .prize-note {
-    font-family: Arial, sans-serif; font-size: 9.5px; color: var(--ink-soft);
-    margin-top: 4px; letter-spacing: .03em;
-  }
-
-  .prize-flag {
-    display: flex; gap: 18px; align-items: center; margin-top: 14px;
-    border-left: 5px solid var(--green); background: var(--paper-2); padding: 16px 18px;
-  }
-  .prize-flag-stat {
-    font-size: 44px; font-weight: 700; color: var(--green); line-height: 1; white-space: nowrap;
-  }
-  .prize-flag b { color: var(--ink); }
-  .prize-flag div:last-child { font-size: 13.5px; color: var(--ink-soft); }
 
   .results { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1px;
     background: var(--rule); border: 1px solid var(--rule); margin: 14px 0; }
@@ -1279,7 +1237,7 @@
       <td class="player">Rogers</td>
       <td class="club">Chelsea</td>
       <td>£7.6</td>
-      <td class="up">+884k</td>
+      <td class="up">+887k</td>
       <td class="own">32.9%</td>
       <td class="">3 of 20</td>
     </tr>
@@ -1287,15 +1245,15 @@
       <td class="player">Palmer</td>
       <td class="club">Chelsea</td>
       <td>£9.7</td>
-      <td class="up">+715k</td>
-      <td class="own">26.1%</td>
+      <td class="up">+717k</td>
+      <td class="own">26.2%</td>
       <td class="">1 of 20</td>
     </tr>
     <tr>
       <td class="player">Gakpo</td>
       <td class="club">Liverpool</td>
       <td>£7.2</td>
-      <td class="up">+639k</td>
+      <td class="up">+640k</td>
       <td class="own">13.1%</td>
       <td class="">1 of 20</td>
     </tr>
@@ -1303,7 +1261,7 @@
       <td class="player">Ødegaard</td>
       <td class="club">Arsenal</td>
       <td>£6.7</td>
-      <td class="up">+637k</td>
+      <td class="up">+639k</td>
       <td class="own">17.3%</td>
       <td class="">3 of 20</td>
     </tr>
@@ -1311,15 +1269,15 @@
       <td class="player">Isak</td>
       <td class="club">Liverpool</td>
       <td>£9.1</td>
-      <td class="up">+600k</td>
+      <td class="up">+602k</td>
       <td class="own">23%</td>
       <td class="">5 of 20</td>
     </tr>
     <tr>
       <td class="player">Konsa</td>
       <td class="club">Arsenal</td>
-      <td>£4.4</td>
-      <td class="up">+557k</td>
+      <td>£4.5</td>
+      <td class="up">+559k</td>
       <td class="own">15.9%</td>
       <td class="">2 of 20</td>
     </tr>
@@ -1327,7 +1285,7 @@
       <td class="player">De Cuyper</td>
       <td class="club">Brighton</td>
       <td>£4.8</td>
-      <td class="up">+497k</td>
+      <td class="up">+499k</td>
       <td class="own">21.8%</td>
       <td class="">5 of 20</td>
     </tr>
@@ -1335,7 +1293,7 @@
       <td class="player">Wissa</td>
       <td class="club">Newcastle</td>
       <td>£6.2</td>
-      <td class="up">+485k</td>
+      <td class="up">+486k</td>
       <td class="own">17.7%</td>
       <td class="">1 of 20</td>
     </tr></tbody></table></div>
@@ -1350,7 +1308,7 @@
       <td class="player">B.Fernandes</td>
       <td class="club">Man Utd</td>
       <td>£12.0</td>
-      <td class="down">&minus;561k</td>
+      <td class="down">&minus;562k</td>
       <td class="own">43.5%</td>
       <td class="">9 of 20</td>
     </tr>
@@ -1358,7 +1316,7 @@
       <td class="player">O'Reilly</td>
       <td class="club">Man City</td>
       <td>£6.4</td>
-      <td class="down">&minus;489k</td>
+      <td class="down">&minus;490k</td>
       <td class="own">13.5%</td>
       <td class="">1 of 20</td>
     </tr>
@@ -1366,7 +1324,7 @@
       <td class="player">Szoboszlai</td>
       <td class="club">Liverpool</td>
       <td>£7.0</td>
-      <td class="down">&minus;449k</td>
+      <td class="down">&minus;450k</td>
       <td class="own">38.5%</td>
       <td class="">6 of 20</td>
     </tr>
@@ -1374,7 +1332,7 @@
       <td class="player">Mbeumo</td>
       <td class="club">Man Utd</td>
       <td>£7.9</td>
-      <td class="down">&minus;400k</td>
+      <td class="down">&minus;401k</td>
       <td class="own">24%</td>
       <td class="down">11 of 20</td>
     </tr>
@@ -1382,7 +1340,7 @@
       <td class="player">Calvert-Lewin</td>
       <td class="club">Leeds</td>
       <td>£6.0</td>
-      <td class="down">&minus;383k</td>
+      <td class="down">&minus;384k</td>
       <td class="own">22.4%</td>
       <td class="">10 of 20</td>
     </tr>
@@ -1390,7 +1348,7 @@
       <td class="player">Cherki</td>
       <td class="club">Man City</td>
       <td>£7.8</td>
-      <td class="down">&minus;354k</td>
+      <td class="down">&minus;355k</td>
       <td class="own">29.4%</td>
       <td class="">4 of 20</td>
     </tr>
@@ -1398,7 +1356,7 @@
       <td class="player">Tzolis</td>
       <td class="club">Arsenal</td>
       <td>£6.4</td>
-      <td class="down">&minus;335k</td>
+      <td class="down">&minus;336k</td>
       <td class="own">16.2%</td>
       <td class="">6 of 20</td>
     </tr>
@@ -1406,7 +1364,7 @@
       <td class="player">Shaw</td>
       <td class="club">Man Utd</td>
       <td>£4.4</td>
-      <td class="down">&minus;312k</td>
+      <td class="down">&minus;313k</td>
       <td class="own">12.5%</td>
       <td class="">6 of 20</td>
     </tr></tbody></table></div>
@@ -1606,88 +1564,43 @@
 
   <!-- ============ PRIZES ============ -->
   <div class="section">
-    <div class="section-head"><h2>What You Are Actually Playing For</h2><div class="line"></div></div>
-
-    <!-- volatile:prize-lede -->
-    <p class="lede">
-      The field is <b>20</b> and the pot is <b>$735</b>. Nothing has
-      been won yet, and after this week nothing much has been lost either — except six
-      Triple Captains.
-    </p>
-    <!-- /volatile -->
-
-    
-  <div class="prize-hero">
-    <div>
-      <div class="prize-hero-k">Prize pool</div>
-      <div class="prize-hero-v">$735</div>
-      <div class="prize-hero-sub">
-        up <b>$280</b> from the $455 advertised at 12 managers
-      </div>
-    </div>
-    <div class="prize-hero-split">
-      <div><span>20</span> managers</div>
-      <div><span>$35</span> each</div>
-      <div><span>$35</span> last-place fine</div>
-    </div>
-  </div>
-  <div class="prize-grid">
+    <div class="section-head"><h2 class="sm">Playing For</h2><div class="line"></div></div>
+    <div class="prize-grid">
     <div class="prize">
-      <div class="prize-icon" aria-hidden="true">🥇</div>
-      <div class="prize-amt">$250</div>
-      
-      <div class="prize-label">1st overall</div>
-      <div class="prize-note">was $175</div>
+      <span class="prize-icon" aria-hidden="true">🥇</span>
+      <span class="prize-amt">$250</span>
+      <span class="prize-label">1st overall</span>
     </div>
     <div class="prize">
-      <div class="prize-icon" aria-hidden="true">🥈</div>
-      <div class="prize-amt">$100</div>
-      
-      <div class="prize-label">2nd overall</div>
-      <div class="prize-note">was $70</div>
+      <span class="prize-icon" aria-hidden="true">🥈</span>
+      <span class="prize-amt">$100</span>
+      <span class="prize-label">2nd overall</span>
     </div>
     <div class="prize">
-      <div class="prize-icon" aria-hidden="true">🥉</div>
-      <div class="prize-amt">$50</div>
-      
-      <div class="prize-label">3rd overall</div>
-      <div class="prize-note">was $35</div>
+      <span class="prize-icon" aria-hidden="true">🥉</span>
+      <span class="prize-amt">$50</span>
+      <span class="prize-label">3rd overall</span>
     </div>
     <div class="prize">
-      <div class="prize-icon" aria-hidden="true">🏆</div>
-      <div class="prize-amt">$50</div>
-      
-      <div class="prize-label">Knockout Cup</div>
-      <div class="prize-note">was $35</div>
+      <span class="prize-icon" aria-hidden="true">🏆</span>
+      <span class="prize-amt">$50</span>
+      <span class="prize-label">Knockout Cup</span>
     </div>
     <div class="prize">
-      <div class="prize-icon" aria-hidden="true">🔥</div>
-      <div class="prize-amt">$50</div>
-      
-      <div class="prize-label">Highest single gameweek</div>
-      <div class="prize-note">one prize, whole season</div>
+      <span class="prize-icon" aria-hidden="true">🔥</span>
+      <span class="prize-amt">$50</span>
+      <span class="prize-label">Highest single gameweek</span>
     </div>
     <div class="prize">
-      <div class="prize-icon" aria-hidden="true">📆</div>
-      <div class="prize-amt">$30</div>
-      <div class="prize-each">each &times; 7</div>
-      <div class="prize-label">Manager of the Block</div>
-      <div class="prize-note">was $35 when the field was 21</div>
+      <span class="prize-icon" aria-hidden="true">📆</span>
+      <span class="prize-amt">$30</span>
+      <span class="prize-label">Manager of the Block &times;7</span>
     </div>
     <div class="prize">
-      <div class="prize-icon" aria-hidden="true">⚙️</div>
-      <div class="prize-amt">$25</div>
-      
-      <div class="prize-label">Management fee</div>
-      <div class="prize-note">commissioner</div>
+      <span class="prize-icon" aria-hidden="true">⚙️</span>
+      <span class="prize-amt">$25</span>
+      <span class="prize-label">Management fee</span>
     </div></div>
-  <div class="prize-flag">
-    <div class="prize-flag-stat">$30</div>
-    <div>
-      <b>what a block win is now worth</b><br>
-      One manager withdrew before paying, so the field is 20 and the pot is $735. The whole shortfall came out of the block pot rather than the podium: blocks drop from $35 to $30 and every other prize is untouched.
-    </div>
-  </div>
   </div>
 
   <div class="divider"><span>The Football</span></div>
@@ -1989,105 +1902,6 @@
     </div>
   </div>
 
-  <!-- ============ THE LEAGUE ============ -->
-  <div class="section">
-    <div class="section-head"><h2>The League</h2><div class="line"></div></div>
-
-    <div class="stat-grid">
-      <div class="stat"><div class="k">Managers</div><div class="v">20</div></div>
-      <div class="stat"><div class="k">Prize pool</div><div class="v">$735</div></div>
-      <div class="stat"><div class="k">In hand</div><div class="v">$700</div></div>
-      <div class="stat"><div class="k">Next deadline</div><div class="v" id="countdown">soon</div></div>
-    </div>
-
-    <p class="rollcall">
-    <b>All 20 managers have paid.</b>
-    Past champions in the field: <b>Fragata</b> (Fragata), <b>Super Maz FFC</b> (Súper), <b>Bittencourt FC</b> (Guigo).
-  </p>
-
-    <figure class="figure">
-  <figcaption class="fig-title">Champions, 2020–2026</figcaption>
-  <div class="scroll"><svg viewBox="0 0 552 132" width="100%" style="max-width:552px"
-       role="img" aria-label="Six seasons of Expendables champions: Fragata 3, Guigo 2, Super 1">
-    
-    <g>
-      <rect x="6" y="26" width="80" height="58" rx="4" fill="#c33f2c"/>
-      
-      <text x="46" y="60" text-anchor="middle" font-size="13"
-            font-family="Georgia,serif" font-weight="700" fill="#efe9db">Fragata</text>
-      <text x="46" y="16" text-anchor="middle" font-size="11"
-            font-family="ui-monospace,Consolas,monospace" fill="#4a4234">20/21</text>
-      
-    </g>
-    <g>
-      <rect x="98" y="26" width="80" height="58" rx="4" fill="#c33f2c"/>
-      
-      <text x="138" y="60" text-anchor="middle" font-size="13"
-            font-family="Georgia,serif" font-weight="700" fill="#efe9db">Fragata</text>
-      <text x="138" y="16" text-anchor="middle" font-size="11"
-            font-family="ui-monospace,Consolas,monospace" fill="#4a4234">21/22</text>
-      
-    </g>
-    <g>
-      <rect x="190" y="26" width="80" height="58" rx="4" fill="#0b6ec7"/>
-      
-      <text x="230" y="60" text-anchor="middle" font-size="13"
-            font-family="Georgia,serif" font-weight="700" fill="#efe9db">Guigo</text>
-      <text x="230" y="16" text-anchor="middle" font-size="11"
-            font-family="ui-monospace,Consolas,monospace" fill="#4a4234">22/23</text>
-      
-    </g>
-    <g>
-      <rect x="282" y="26" width="80" height="58" rx="4" fill="#a8791a"/>
-      
-      <text x="322" y="60" text-anchor="middle" font-size="13"
-            font-family="Georgia,serif" font-weight="700" fill="#efe9db">Súper</text>
-      <text x="322" y="16" text-anchor="middle" font-size="11"
-            font-family="ui-monospace,Consolas,monospace" fill="#4a4234">23/24</text>
-      
-    </g>
-    <g>
-      <rect x="374" y="26" width="80" height="58" rx="4" fill="#0b6ec7"/>
-      
-      <text x="414" y="60" text-anchor="middle" font-size="13"
-            font-family="Georgia,serif" font-weight="700" fill="#efe9db">Guigo</text>
-      <text x="414" y="16" text-anchor="middle" font-size="11"
-            font-family="ui-monospace,Consolas,monospace" fill="#4a4234">24/25</text>
-      
-    </g>
-    <g>
-      <rect x="466" y="26" width="80" height="58" rx="4" fill="#c33f2c"/>
-      <rect x="463" y="23" width="86" height="64" rx="6"
-            fill="none" stroke="#201b14" stroke-width="2"/>
-      <text x="506" y="60" text-anchor="middle" font-size="13"
-            font-family="Georgia,serif" font-weight="700" fill="#efe9db">Fragata</text>
-      <text x="506" y="16" text-anchor="middle" font-size="11"
-            font-family="ui-monospace,Consolas,monospace" fill="#4a4234">25/26</text>
-      <text x="506" y="103" text-anchor="middle" font-size="9.5"
-            font-family="Arial,sans-serif" letter-spacing=".08em"
-            fill="#4a4234">REIGNING</text>
-    </g>
-    <g transform="translate(6, 118)">
-    <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="11" height="11" rx="2" fill="#c33f2c"/>
-      <text x="17" y="10" font-size="11.5" font-family="Georgia,serif"
-            fill="#201b14">Fragata — 3</text>
-    </g>
-    <g transform="translate(118, 0)">
-      <rect x="0" y="0" width="11" height="11" rx="2" fill="#0b6ec7"/>
-      <text x="17" y="10" font-size="11.5" font-family="Georgia,serif"
-            fill="#201b14">Guigo — 2</text>
-    </g>
-    <g transform="translate(236, 0)">
-      <rect x="0" y="0" width="11" height="11" rx="2" fill="#a8791a"/>
-      <text x="17" y="10" font-size="11.5" font-family="Georgia,serif"
-            fill="#201b14">Súper — 1</text>
-    </g></g>
-  </svg></div>
-  <figcaption class="fig-note">Back-to-back has been done once: Fragata (20/21 and 21/22). Nobody has ever won three in a row.</figcaption>
-</figure>
-  </div>
-
   <!-- ============ THE SMALL PRINT ============ -->
   <details class="fineprint">
     <summary>The small print — terms, rights and the legal bit</summary>
@@ -2138,24 +1952,3 @@
 <!-- gags:regret:Hilger:Mitchell,capbench:MacDowell's,vice:La Curva FC:Raya,twins:Cracks United|Super Maz FFC -->
 
 </div>
-
-<script>
-  (function () {
-    // Generated: the next gameweek deadline straight from the game. Hardcoding this
-    // left the page counting down to 21 August a fortnight after it had passed.
-    var deadline = Date.parse('2026-09-12T12:30:00Z')
-    var el = document.getElementById('countdown')
-
-    function tick () {
-      var left = deadline - Date.now()
-      if (left <= 0) { el.textContent = 'locked'; return }
-      var d = Math.floor(left / 86400000)
-      var h = Math.floor(left / 3600000) % 24
-      var m = Math.floor(left / 60000) % 60
-      el.textContent = 'Deadline in ' + (d > 0 ? d + 'd ' + h + 'h' : h + 'h ' + m + 'm')
-    }
-
-    tick()
-    setInterval(tick, 30000)
-  })()
-</script>
